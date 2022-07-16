@@ -1,4 +1,8 @@
 
+#Name: Erasmus Asare
+#Index Number: BT/SEG/21/002
+
+
 # FUNCTION: Convert decimal to binary
 def toBinary():
     Value = input("Enter decimal number >> : ") #Take user input
