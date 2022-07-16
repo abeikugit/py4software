@@ -19,8 +19,7 @@ print()
 
 
 def bi_to_decimal(val):
-   
-    # Convert a binary value to decimal
+   # Convert a binary value to decimal
     val = int(val)
     rs = 0
     j = 1
@@ -32,4 +31,5 @@ def bi_to_decimal(val):
     return rs
 number = input("Enter binary number here >>: ")
 print("The equivqlence of ",number,"is :",bi_to_decimal(number))
+
 print("********************************************************")
