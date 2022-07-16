@@ -1,5 +1,5 @@
 # ToBinary
-python 3 piece of code to convert binary to decimal and decimal to python.
+python code is converting binary to decimal.
 
 ## to convert x decimal value to binary
 use the 'decimal_to_binary' function and pass in your value as a parameter. 
