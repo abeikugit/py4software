@@ -1,34 +1,48 @@
 # Isaac Banson Botwe
 # Assignment
 
-# Function Binary to Decimal number
-from builtins import int
 
-def binaryToDecimal(val):
-    return int(val, 2)
+#!/usr/bin/python3
+def decimal_to_binary():
+    
+    number = input("Input a decimal number   ")
+    copy = number
+    number = int(number)
+    bin_list = []
+    while number > 0 :
+        num = number % 2
+        bin_list.append(num)
+        number //= 2
+    bin_list.reverse()
+    print("The binary equivalence of", copy,  "is: ")
+    for i in bin_list :
+        print(i, end="")
 
+decimal_to_binary();
+    
+# Question 2:
 
+# Python code to convert binary to decimal
+def binToDec(bin_value):
+    
+    # converting binary to decimal
+    decimal_value = 0
+    count = 0
+    
+    while(bin_value != 0):
+        digit = bin_value % 10
+        decimal_value = decimal_value + digit * pow(2, count)
+        bin_value = bin_value//10
+        count += 1
+
+    # returning the result        
+    return decimal_value
+
+# main code
 if __name__ == '__main__':
-    print(binaryToDecimal('100'))
-    print(binaryToDecimal('101'))
-    print(binaryToDecimal('1001'))
-
-
-# Function to convert Decimal to Binary
-
-def decimalToBinary(ip_val):
-    if ip_val >= 1:
-        # recursive function call
-        decimalToBinary(ip_val // 2)
-
-    # printing remainder from each function call
-    print(ip_val % 2, end='')
+    binary = int(input("Enter a binary value: "))
+    print("decimal of binary ", binary, " is: ", binToDec(binary))
 
 
 
-if __name__ == '__main__':
-    # decimal value
-    ip_val = int(input("enter your number  "))
 
-    # Calling special function
-    decimalToBinary(ip_val)
