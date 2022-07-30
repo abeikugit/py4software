@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+#Just for practice _Erasmus
 number = input("Input a decimal number")
 copy = number
 number = int(number)
