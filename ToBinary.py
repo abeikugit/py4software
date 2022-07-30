@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Peniel Nyinaku
+# BT/SEG/21/009
 
 """
 Tobinary.py
